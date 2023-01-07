@@ -6,17 +6,21 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor01: #8E2424;
+    --cor02: #667085;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
     margin: 0px 80px;
+    font-family: 'Inter', sans-serif;
 }
 
 header{
     display: flex;
-    font-family: 'Inter', sans-serif;
     height: 80px;
     flex-direction: row;
     align-items: center;
@@ -28,7 +32,7 @@ nav{
 }
 
 a{
-    color: #667085;
+    color: var(--cor02);
     padding: 0px 13px;
 }
 
@@ -40,7 +44,7 @@ nav > a:hover, .butoes > a:hover{
     display: flex;
     align-items: center;
     font-size: 18px;
-    color: #3A404E;
+    color: var(--cor02);
     font-weight: 500;
 }
 
@@ -51,10 +55,36 @@ nav > a:hover, .butoes > a:hover{
 .cadastro{
     border-radius: 8px;
     padding: 10px 18px;
-    background-color: #8E2424;
+    background-color: var(--cor01);
     border: none;
     color: white;
     cursor: pointer;
     font-size: 16px;
     font-family: 'inter';
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+}
+
+.cabecalho span{
+    font-size: 16px;
+    color: var(--cor01);
+    font-weight: 600;
+}
+
+.cabecalho h1{
+    margin: 30px 0px;
+    font-size: 38px;
+}
+
+.cabecalho p{
+    max-width: 780px;
+    text-align: center;
+    font-size: 19px;
+    color: var(--cor02);
+    line-height: 23px;
 }
