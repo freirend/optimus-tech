@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="medias.css">
     <title>OptimusTech - Trabalhe conosco</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <a href="#">
             <div class="logo">
                     <img src="imagens/ww-logo.png" alt="logo-OptimusTech" width="27px" height="27px"> OptimusTech
             </div>
         </a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Produtos</a>
-            <a href="#">Recursos</a>
-            <a href="#">Sobre nós</a>
-        </nav>
+        
+        <div class="naveg">
+            <i class="uil uil-bars" id="burguer"></i>
+            <nav id="menu">
+                <a href="#" class="menu-in">Home</a>
+                <a href="#" class="menu-in">Produtos</a>
+                <a href="#" class="menu-in">Recursos</a>
+                <a href="#" class="menu-in">Sobre nós</a>
+            </nav>
+        </div>
+        
         <div class="butoes">
             <a href="#">Entrar</a>
             <button class="cadastro">Cadastrar</button>
@@ -125,5 +132,18 @@
         <p>Júlia Castro</p>
         <p class="modif">Desenvolvedora Web</p>
     </section>
+    <section class="formulario">
+        <h2>Acompanhe as nossas oportunidades</h2>
+        <span>Seja o primeiro a saber quando novas vagas serão abertas!</span>
+        <p class="for-cad">
+            <input type="email" name="mail" id="mail" placeholder="Seu e-mail">
+            <button class="cadastro">Cadastrar</button>
+        </p>
+        <footer>
+            <p>© 2022 OptimusTech. Todos os direitos reservados.</p>
+        </footer>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media (min-width: 300px) and (max-width: 1300px) {
+    
+    body{
+        margin: 0;
+    }
+    header{
+        margin-bottom: 40px;
+    }
+    
+    .naveg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+        width: 120px;
+        height: 120px;
+        padding-top: 44.8px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        margin: 0;
+        display: none;
+        
+    }
+
+    .uil-bars{
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .butoes{
+        display: none;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+    .butoes{
+        display: block;
+        padding-right: 10px;
+    }
+
+    .naveg{
+        padding-top: 47.8px;
+    }
+
+    .naveg i{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        border: 2px solid #8E2424;
+        justify-content: center;
+        padding: 3px;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .naveg i{
+        display: none;
+    }
+}
