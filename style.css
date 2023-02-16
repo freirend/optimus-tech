@@ -27,6 +27,10 @@ header{
     justify-content: space-between;
 }
 
+.uil{
+    display: none;
+}
+
 nav{
     margin-right: 250px;
 }
@@ -36,7 +40,7 @@ a{
     padding: 0px 13px;
 }
 
-nav > a:hover, .butoes > a:hover{
+nav > a:hover, .botoes > a:hover{
     text-decoration: underline;
 }
 
@@ -146,7 +150,7 @@ nav > a:hover, .butoes > a:hover{
 }
 
 .vaga{
-    width: 768px;
+    max-width: 768px;
     display: block;
     margin: 0 auto;
     padding-top: 40px;
@@ -156,14 +160,17 @@ nav > a:hover, .butoes > a:hover{
     padding-bottom: 60px;
     text-indent: -20px;
     font-size: 18px;
+    max-width: 320px;
 }
 
 .titulo-vaga{
+    max-width: 320px;
     padding-bottom: 30px;
 }
 
 .informacao-vaga{
     padding-bottom: 30px;
+    max-width: 320px;
 }
 
 .informacao-vaga span{

@@ -1,19 +1,9 @@
-const menu = document.querySelector('#menu');
-const burguer = document.querySelector('#burguer');
+let menu = document.querySelector('.uil-bars')
+let navbar = document.querySelector('.menu')
+let btns = document.querySelector('.botoes')
 
-
-burguer.addEventListener('click', ()=>{
-    if (menu.style.display === 'flex'){
-        menu.style.display = 'none';
-    } else{
-        menu.style.display = 'flex';
-    }
-});
-
-function mudouTamanho(){
-    if (window.innerWidth > 800){
-        menu.style.display = 'flex'
-    }else{
-        menu.style.display = 'none'
-    }
-}
+menu.addEventListener('click', ()=>{
+    menu.classList.toggle('uil-multiply')
+    navbar.classList.toggle('active-nav')
+    btns.classList.toggle('active-btn')
+})
